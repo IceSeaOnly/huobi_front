@@ -26,25 +26,25 @@ export default class RealTimeStatistics extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   axios
-  //     .get('/admin/readTimeStatistics')
-  //     .then((response) => {
-  //       this.setState({
-  //         risedCoinCounts:response.data.data.risedCoinCounts,
-  //         allCoinCounts:response.data.data.allCoinCounts,
-  //         avgRiseRange:response.data.data.avgRiseRange,
-  //         maxRiseRange:response.data.data.maxRiseRange,
-  //         accountBtcSum:response.data.data.accountBtcSum,
-  //         accountRmbSum:response.data.data.accountRmbSum,
-  //         evnGoodPoints:response.data.data.evnGoodPoints,
-  //         evnBadPoints:response.data.data.evnBadPoints,
-  //       });
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }
+  componentDidMount() {
+    axios
+      .get('/admin/readTimeStatistics')
+      .then((response) => {
+        this.setState({
+          risedCoinCounts:response.data.data.risedCoinCounts,
+          allCoinCounts:response.data.data.allCoinCounts,
+          avgRiseRange:response.data.data.avgRiseRange,
+          maxRiseRange:response.data.data.maxRiseRange,
+          accountBtcSum:response.data.data.accountBtcSum,
+          accountRmbSum:response.data.data.accountRmbSum,
+          evnGoodPoints:response.data.data.evnGoodPoints,
+          evnBadPoints:response.data.data.evnBadPoints,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
 
   render() {
     return (
