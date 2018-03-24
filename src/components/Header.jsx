@@ -104,9 +104,9 @@ export default class Header extends PureComponent {
                 </Link>
               </li>
               <li className="user-profile-menu-item">
-                <Link to="/logout">
+                <a href="/logout">
                   <FoundationSymbol type="compass" size="small" />退出
-                </Link>
+                </a>
               </li>
             </ul>
           </Balloon>
