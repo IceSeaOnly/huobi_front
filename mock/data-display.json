@@ -1,4 +1,29 @@
 {
-  "status": "SUCCESS",
-  "data": {}
+    "status": "SUCCESS",
+    "data": [
+        {
+            "count": 100,
+            "expect": 20,
+            "title": "买入交易"
+        },
+        {
+            "count": "3,000",
+            "expect": 20,
+            "title": "卖出交易"
+        },
+        {
+            "count": "20,000",
+            "expect": 20,
+            "title": "买入总额"
+        },
+        {
+            "count": "20,000",
+            "expect": 20,
+            "title": "卖出总额"
+        },
+        {
+            "count": "20,000",
+            "title": "营收总额"
+        }
+    ]
 }

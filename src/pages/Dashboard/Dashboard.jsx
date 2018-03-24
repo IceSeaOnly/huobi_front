@@ -2,8 +2,6 @@
 
 import React, { Component } from 'react';
 
-import DataDisplay from './components/DataDisplay';
-
 import DataStatistics from './components/DataStatistics';
 
 import RealTimeStatistics from './components/RealTimeStatistics';
@@ -26,8 +24,7 @@ export default class Dashboard extends Component {
         <RealTimeStatistics />
 
         <DataStatistics />
-
-        
+        <LatestNews />
       </div>
     );
   }

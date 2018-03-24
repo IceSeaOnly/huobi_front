@@ -1,20 +1,7 @@
 import React, { Component } from 'react';
 import IceContainer from '@icedesign/container';
-
-const data = [
-  {
-    count: 100,
-    title: '日活跃数',
-  },
-  {
-    count: '3,000',
-    title: '月活跃数',
-  },
-  {
-    count: '20,000',
-    title: '年活跃数',
-  },
-];
+import axios from 'axios';
+import { Pagination,Feedback } from '@icedesign/base';
 
 export default class DataDisplay extends Component {
   static displayName = 'DataDisplay';
@@ -25,7 +12,26 @@ export default class DataDisplay extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      data:[]
+    };
+  }
+
+  componentDidMount(){
+    axios('/admin/tradeHistoryDisplay').then((response) => {
+    // axios('./mock/data-display.json').then((response) => {
+      const { data } = response;
+      if(data && data.status == 'SUCCESS'){
+        this.setState({
+          data: data.data,
+        });
+      }else{
+        Feedback.toast.error("数据获取失败!");
+      }
+    })
+    .catch(function (error) {
+      Feedback.toast.error("数据获取失败!");
+    });
   }
 
   render() {
@@ -33,10 +39,11 @@ export default class DataDisplay extends Component {
       <div className="data-display">
         <IceContainer>
           <div style={styles.items}>
-            {data.map((item, index) => {
+            {this.state.data.map((item, index) => {
               return (
                 <div style={styles.item} key={index}>
-                  <h5 style={styles.count}>{item.count}</h5>
+                  <span style={styles.count}>{item.count}</span>/
+                  <span style={styles.expect}>{item.expect}</span>                  
                   <span style={styles.splitLine} />
                   <p style={styles.title}>{item.title}</p>
                 </div>
@@ -55,15 +62,19 @@ const styles = {
     flexWrap: 'wrap',
   },
   item: {
-    width: '33.3333%',
+    width: '20%',
     margin: '5px 0',
     textAlign: 'center',
   },
   count: {
     margin: '12px 0',
     fontWeight: 'bold',
-    fontSize: '32px',
+    fontSize: '30px',
     color: '#15A0FF',
+  }, 
+  expect: {
+    fontSize: '15px',
+    color: '#D6D6D6',
   },
   title: {
     color: '#999',

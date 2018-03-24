@@ -42,30 +42,6 @@
       "layout": "HeaderAsideFooterResponsiveLayout"
     },
     {
-      "page": "CateList",
-      "path": "/cate/list",
-      "builtIn": true,
-      "layout": "HeaderAsideFooterResponsiveLayout"
-    },
-    {
-      "page": "CreateCate",
-      "path": "/cate/create",
-      "builtIn": true,
-      "layout": "HeaderAsideFooterResponsiveLayout"
-    },
-    {
-      "page": "TagList",
-      "path": "/tag/list",
-      "builtIn": true,
-      "layout": "HeaderAsideFooterResponsiveLayout"
-    },
-    {
-      "page": "CreateTag",
-      "path": "/tag/create",
-      "builtIn": true,
-      "layout": "HeaderAsideFooterResponsiveLayout"
-    },
-    {
       "page": "UserList",
       "path": "/strategy/list",
       "builtIn": true,
