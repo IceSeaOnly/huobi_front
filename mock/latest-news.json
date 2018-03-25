@@ -3,61 +3,56 @@
     "data": {
         "list": [
             {
-                "name": "买入交易",
-                "list": [
+                "name":"test",
+                "list":[
                     {
-                        "title": "这里是文章的标题1",
-                        "time": "2018-03-31"
-                    },
-                    {
-                        "title": "这里是文章的标题2",
-                        "time": "2018-02-02"
-                    },
-                    {
-                        "title": "这里是文章的标题3",
-                        "time": "2018-01-22"
-                    },
-                    {
-                        "title": "这里是文章的标题4",
-                        "time": "2018-02-02"
-                    },
-                    {
-                        "title": "这里是文章的标题5",
-                        "time": "2018-01-22"
-                    },
-                    {
-                        "title": "这里是文章的标题6",
-                        "time": "2018-02-02"
-                    }
-                ]
+                "symbol": "BTCUSDT",
+                "amount": "0.01",
+                "total":123,
+                "field-cash-amount": "0.0",
+                "fieldFees": "0",
+                "account-id": "1033900",
+                "source": "margin-app",
+                "type": "buy-limit",
+                "finished-at": 0,
+                "finishedAt": "1970-01-01 08:00:00",
+                "createdAt": "2018-03-25 07:58:30",
+                "accountId": "1033900",
+                "canceledAt": "1970-01-01 08:00:00",
+                "price": "8450",
+                "fieldCashAmount": "0",
+                "canceled-at": 0,
+                "fieldAmount": "0",
+                "created-at": 1521935910742,
+                "field-fees": "0.0",
+                "id": 2693011404,
+                "state": "submitted",
+                "field-amount": "0.0"
             },
             {
-                "name": "卖出交易",
-                "list": [
-                    {
-                        "title": "这里是文章的标题1",
-                        "time": "2018-03-31"
-                    },
-                    {
-                        "title": "这里是文章的标题2",
-                        "time": "2018-02-02"
-                    },
-                    {
-                        "title": "这里是文章的标题3",
-                        "time": "2018-01-22"
-                    },
-                    {
-                        "title": "这里是文章的标题4",
-                        "time": "2018-02-02"
-                    },
-                    {
-                        "title": "这里是文章的标题5",
-                        "time": "2018-01-22"
-                    },
-                    {
-                        "title": "这里是文章的标题6",
-                        "time": "2018-02-02"
-                    }
+                "symbol": "BTCUSDT",
+                "amount": "0.01",
+                "total":123,
+                "field-cash-amount": "0.0",
+                "fieldFees": "0",
+                "account-id": "1033900",
+                "source": "margin-app",
+                "type": "sell-limit",
+                "finished-at": 0,
+                "finishedAt": "1970-01-01 08:00:00",
+                "createdAt": "2018-03-25 07:55:45",
+                "accountId": "1033900",
+                "canceledAt": "1970-01-01 08:00:00",
+                "price": "9000",
+                "fieldCashAmount": "0",
+                "canceled-at": 0,
+                "fieldAmount": "0",
+                "created-at": 1521935745713,
+                "field-fees": "0.0",
+                "id": 2692927836,
+                "state": "submitted",
+                "field-amount": "0.0"
+            }
                 ]
             }
         ],

@@ -64,8 +64,13 @@ export default class LatestNews extends Component {
                 {dataSet.list.map((item, itemIndex) => {
                   return (
                     <a className="link" key={itemIndex}  style={styles.item}>
-                      <div style={styles.itemTitle}>{item.title}</div>
-                      <div style={styles.itemTime}>{item.time}</div>
+                      <div style={styles.itemTitle}>
+                        <span style={styles.BLACK}>{item.symbol}</span>
+                        <span style={styles.RED}>{item.price}</span>
+                        <span style={styles.GREEN}>x {item.amount}</span>
+                        <span style={styles.BLUE}> = {item.total}</span>
+                      </div>
+                      <div style={styles.itemTime}>{item.finishedAt}</div>
                     </a>
                   );
                 })}
@@ -84,13 +89,29 @@ export default class LatestNews extends Component {
 }
 
 const styles = {
+  RED:{
+    color:'red',
+    padding:'15px'
+  },
+  GREEN:{
+    color:'green',
+    padding:'15px'
+  },
+  BLACK:{
+    color:'black',
+    padding:'15px'
+  },
+  BLUE:{
+    color:'blue',
+    padding:'15px'
+  },
   container: {
     display: 'flex',
     justifyContent: 'space-between',
   },
   cardContainer: {
     width: '49.5%',
-    height: 280,
+    height: 300,
   },
 
   cardTitle: {
