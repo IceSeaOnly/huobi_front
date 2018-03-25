@@ -30,8 +30,8 @@ export default class LatestNews extends Component {
       const { data } = response;
       if(data && data.status == 'SUCCESS'){
         this.setState({
-          dataSource: data.data,
-          total:data.totalSize,
+          dataSource: data.data.list,
+          total:data.data.totalSize,
           current:page
         });
       }else{
