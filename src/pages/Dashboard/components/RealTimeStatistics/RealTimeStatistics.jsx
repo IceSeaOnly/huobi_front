@@ -89,11 +89,11 @@ export default class RealTimeStatistics extends Component {
                 </div>
                 <div style={styles.itemRow}>
                   <div style={styles.itemCol}>
-                    <h2 style={styles.itemNum}>{this.state.accountBtcSum}</h2>
+                    <h2 style={styles.itemNum2}>{this.state.accountBtcSum}</h2>
                     <p style={styles.desc}>BTC</p>
                   </div>
                   <div style={styles.itemCol}>
-                    <h2 style={styles.itemNum}>{this.state.accountRmbSum}</h2>
+                    <h2 style={styles.itemNum2}>{this.state.accountRmbSum}</h2>
                     <p style={styles.desc}>RMB</p>
                   </div>
                 </div>
@@ -158,6 +158,10 @@ const styles = {
   itemNum: {
     margin: '20px 0',
     fontSize: '32px',
+  },
+  itemNum2: {
+    margin: '20px 0',
+    fontSize: '26px',
   },
   total: {
     margin: 0,

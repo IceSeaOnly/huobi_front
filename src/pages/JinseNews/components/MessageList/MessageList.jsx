@@ -54,9 +54,9 @@ export default class MessageList extends Component {
     var rsp = '';
     for (var i = 0; i < num; i++) {
       if(num >= 5){
-        rsp += '🔥';
+        rsp += '※';
       }else{
-        rsp += '🔔';
+        rsp += '△';
       }
     }
     return rsp;
@@ -107,7 +107,7 @@ const styles = {
     color: '#999',
   },
   message: {
-    color: '#999',
+    color: '#000000',
     marginBottom: '20px',
     
   },

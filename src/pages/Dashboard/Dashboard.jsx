@@ -6,7 +6,7 @@ import DataStatistics from './components/DataStatistics';
 
 import RealTimeStatistics from './components/RealTimeStatistics';
 
-import LatestNews from './components/LatestNews';
+import LatestNews from '../BuyAndSell/components/LatestNews';
 
 import './Dashboard.scss';
 

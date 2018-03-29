@@ -3,6 +3,7 @@ import IceContainer from '@icedesign/container';
 import './LatestNews.scss';
 import { Pagination,Feedback } from '@icedesign/base';
 import axios from 'axios';
+import Ellipsis from '@icedesign/ellipsis';
 
 export default class LatestNews extends Component {
   static displayName = 'LatestNews';
@@ -68,6 +69,7 @@ export default class LatestNews extends Component {
                         <span style={styles.BLACK}>{item.symbol}</span>
                         <span style={styles.RED}>{item.price}</span>
                         <span style={styles.GREEN}>x {item.amount}</span>
+                        <span style={styles.BLACK}>- {item.fieldFees}</span>
                         <span style={styles.BLUE}> = {item.total}</span>
                       </div>
                       <div style={styles.itemTime}>{item.finishedAt}</div>
@@ -91,19 +93,27 @@ export default class LatestNews extends Component {
 const styles = {
   RED:{
     color:'red',
-    padding:'15px'
+    width:'75px',
+    display:'block',
+    float:'left'
   },
   GREEN:{
     color:'green',
-    padding:'15px'
+    width:'75px',
+    display:'block',
+    float:'left'
   },
   BLACK:{
     color:'black',
-    padding:'15px'
+    width:'75px',
+    display:'block',
+    float:'left'
   },
   BLUE:{
     color:'blue',
-    padding:'15px'
+    width:'75px',
+    display:'block',
+    float:'left'
   },
   container: {
     display: 'flex',
